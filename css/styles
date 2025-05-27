@@ -241,7 +241,7 @@ header a:hover {
 }
 
 .logo_image_group img {
-  width: 550px;
+  width: 350px;
 }
 
 nav {
@@ -517,7 +517,7 @@ section p {
   }
 
   .logo_image_group img {
-    width: 80%;
+    width: 60%;
   }
 
   .nav {

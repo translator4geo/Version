@@ -165,7 +165,6 @@ h1 {
   /* font-family: '3DUnicode'; */
   font-family: 'BakurReg';
   font-size: 30px;
-  display: flex;
 }
 
 h2 {
@@ -195,11 +194,16 @@ header a:hover {
   transform: translate(0, -25px);
 }
 
-#languages a {
+.languages a {
   font-size: 30px;
   font-weight: bold;
   color: #207df0;
   text-decoration: none;
+}
+
+.languages img {
+  width: 50px;
+  height: 30px;
 }
 
 .first_page {
@@ -277,7 +281,7 @@ nav {
   font-family: 'BakurReg';
   font-size: 45px;
   font-weight: bolder;
-  color: #4487f5;
+  color: #505050;
 }
 
 .nav__list a:hover,
@@ -332,7 +336,7 @@ nav {
 section {
   border-bottom: solid black 1px;
   /* height: 100vh; */
-  background-image: url(../images/redd-francisco-5U_28ojjgms-unsplash.jpg);
+  background-image: url(../images/mikhail-pavstyuk-EKy2OTRPXdw-unsplash.jpg);
   background-size: cover;
   image-rendering: auto;
   background-attachment: fixed;
@@ -365,6 +369,8 @@ section p {
 }
 
 .partners {
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr); */
   border-bottom: solid black 1px;
   /* padding: 20px; */
   margin: 0;
@@ -398,7 +404,8 @@ section p {
 }
 
 .article {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
@@ -406,6 +413,23 @@ section p {
   margin: 20px;
   margin-bottom: 40px;
   gap: 20px;
+}
+
+.service__image {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.service__image img {
+  width: 50px;
+  height: 50px;
+  border: solid 1px rgb(130, 116, 234);
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .footer {
@@ -507,7 +531,7 @@ section p {
     align-items: center;
   } */
 
- .first_page {
+  .first_page {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -524,7 +548,7 @@ section p {
 
   .nav {
     object-fit: contain;
-    width: 200px;
+    width: 250px;
     flex-direction: column;
   }
 
@@ -560,6 +584,10 @@ section p {
   .nav__list {
     display: flex;
     flex-direction: column;
+  }
+
+  .nav__list a {
+    font-size: 30px;
   }
 
   /* .nav__list a {
@@ -635,7 +663,7 @@ section p {
     }
 
     .logo {
-      margin-bottom: 150px;
+      margin-bottom: 80px;
     }
 
     .first_page {
